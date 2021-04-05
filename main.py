@@ -20,10 +20,10 @@ driver = webdriver.Chrome()
 driver.get("https://github.com/login")
 
 username = driver.find_element_by_xpath("//*[@id='login_field']")
-username.send_keys(cred.git_user)     #replace cred.git_user with your github username
+username.send_keys("Your Username")  #Enter your github username
 
 password = driver.find_element_by_xpath("//*[@id='password']")
-password.send_keys(cred.git_pass)   #replace cred.git_pass with your github password
+password.send_keys("Your password")  #Enter your github password
 
 sign_in = driver.find_element_by_xpath("//*[@id='login']/form/div[4]/input[12]")
 sign_in.click()
