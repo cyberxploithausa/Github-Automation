@@ -43,11 +43,3 @@ repo.send_keys("Github-Automation")         #name of repository
 time.sleep(2)
 create_repo = driver.find_element_by_xpath("//*[@id='new_repository']/div[4]/button")
 create_repo.click()
-
-
-
-
-
-
-
-
