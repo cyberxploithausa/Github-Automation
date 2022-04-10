@@ -23,12 +23,19 @@ driver.get("https://github.com/login")
 driver.implicitly_wait(5)
 
 username = driver.find_element_by_xpath("//*[@id='login_field']")
+<<<<<<< HEAD
 # replace cred.git_user with your github username
 username.send_keys(cred.git_user)
 
 password = driver.find_element_by_xpath("//*[@id='password']")
 # replace cred.git_pass with your github password
 password.send_keys(cred.git_pass)
+=======
+username.send_keys("Your Username")  #Enter your github username
+
+password = driver.find_element_by_xpath("//*[@id='password']")
+password.send_keys("Your password")  #Enter your github password
+>>>>>>> 0a1d82eca45658842d5c9fa41c8955f59fc0088e
 
 sign_in = driver.find_element_by_name("commit")
 sign_in.click()
