@@ -35,7 +35,7 @@ username.send_keys("Your Username")  #Enter your github username
 
 password = driver.find_element_by_xpath("//*[@id='password']")
 password.send_keys("Your password")  #Enter your github password
->>>>>>> 0a1d82eca45658842d5c9fa41c8955f59fc0088e
+
 
 sign_in = driver.find_element_by_name("commit")
 sign_in.click()
